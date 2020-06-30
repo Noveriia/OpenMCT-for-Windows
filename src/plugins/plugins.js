@@ -52,8 +52,7 @@ define([
     './themes/espresso',
     './themes/maelstrom',
     './themes/snow',
-    './notificationIndicator/plugin',
-    './dict/dictionary-plugin' //added dictionary
+    './notificationIndicator/plugin'
 ], function (
     _,
     UTCTimeSystem,
@@ -86,8 +85,7 @@ define([
     Espresso,
     Maelstrom,
     Snow,
-    NotificationIndicator,
-    DictionaryPlugin //added dictionary
+    NotificationIndicator
 ) {
     var bundleMap = {
         LocalStorage: 'platform/persistence/local',
@@ -197,6 +195,5 @@ define([
     plugins.Condition = ConditionPlugin.default;
     plugins.ConditionWidget = ConditionWidgetPlugin.default;
     plugins.NotificationIndicator = NotificationIndicator.default;
-    plugins.DictionaryPlugin = DictionaryPlugin.default; //added dictionary
     return plugins;
 });
